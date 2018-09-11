@@ -23,6 +23,7 @@ export class LoginPage {
       const info = await this.fireAuth.auth.signInWithEmailAndPassword(user.email, user.password);
       if(info){
         await this.navCtrl.setRoot(TabsPage);
+        //this.navCtrl.setRoot('ProfilePage');
       }
     }
     catch(e){
